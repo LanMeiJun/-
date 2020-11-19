@@ -1,0 +1,1127 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap form</title>
+    <link rel="stylesheet" href="../LiuYang/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./tubiao/fontawesome-free-5.12.1-web/css/all.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .fig1 figcaption {
+        position: absolute;
+        top: 0;
+        color: #ffffff;
+        width: 1520px;
+        height: 260px;
+        background-color: #DDDDDD;
+        opacity: 0.6;
+    }
+
+    .fig1 figcaption p {
+        transform: translate(150px, 180px);
+        font-weight: bold;
+        font-size: 3em;
+        color: black;
+        font-family: MicrosoftYaHei, SimHei;
+    }
+
+    figure1 {
+        float: left;
+        overflow: hidden;
+    }
+
+
+    .fig2 {
+        position: relative;
+    }
+
+    .fig2 figcaption div {
+        display: none;
+        color: #ffffff;
+    }
+
+    .fig2:hover figcaption div {
+        background-color: rgba(236, 252, 10, 0.678);
+        width: 370px;
+        height: 230px;
+        position: absolute;
+        display: block;
+        margin-top: -230px;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 50px;
+    }
+
+    .fig2 img {
+        transition: all 3s;
+    }
+
+    .fig2:hover img {
+        transform: scale(1.5);
+    }
+
+    .d {
+        padding-left: 160px;
+    }
+
+    .ddd {
+        background-color: #d5010f;
+        font-weight: bold;
+
+    }
+
+    .link-top {
+        width: 12%;
+        height: 1px;
+        border-top: solid #FFBB00 1px;
+        margin-left: 44%;
+        padding-top: 15px;
+        margin-top: -30px;
+
+    }
+
+    .vvv:hover {
+        background-color: black;
+        color: #ffffff;
+
+    }
+
+    .vvv {
+        background-color: #ffffff;
+        color: black;
+    }
+
+    .qf {
+        clear: both;
+        padding-top: 30px;
+    }
+
+    .cc {
+        font-size: 14px;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .cc h4 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .cc div {
+        padding-left: 25px;
+    }
+
+    .e {
+        margin-top: 30px;
+        text-shadow: 1px 1px 1px yellow
+    }
+
+    .g {
+        margin-left: 5px;
+    }
+
+    .hh {
+        margin-top: -6%;
+    }
+
+    .bbb {
+        padding-top: 20px;
+        margin-left: 5px;
+    }
+
+    .try {
+        margin-top: -4%;
+        background-image: url(img/liu/index_b1.jpg);
+        width: 1600px;
+        height: 450px;
+    }
+
+    .a1 {
+
+        width: 400px;
+        height: 200px;
+        border: 1px solid white;
+        background-color: white;
+        margin-top: -50px;
+        text-align: center;
+        margin-left: -15px;
+    }
+
+    .a1 h5 {
+        margin-top: 50px;
+    }
+
+    .a2 {
+        margin-left: -10%;
+        margin-top: 7%;
+
+    }
+
+    .a3 {
+
+        margin-left: 5%;
+        margin-top: 7%;
+
+    }
+
+    .qf1 {
+        clear: both;
+        padding-top: 50px;
+    }
+
+    .b1 {
+        padding-top: 20px;
+    }
+
+    .b2 {
+        padding-top: 10px;
+    }
+
+    .c1 {
+        height: 450px;
+    }
+
+    .c2 {
+        margin-top: -3%;
+        padding-right: 10%;
+        margin-left: 5%;
+    }
+
+    .c2 img {
+        border: solid 1px #262027;
+        width: 285px;
+        height: 407px;
+        margin-top: 5px;
+    }
+
+    .c2 img:hover {
+        z-index: auto;
+        position: absolute;
+        left: 25px;
+        top: 10px;
+        width: 290px;
+        height: 415px;
+    }
+
+    .c3 {
+        margin-top: 30px;
+        margin-left: -4%;
+        text-shadow: 1px 1px 1px yellow
+    }
+
+    .c4 {
+        width: 12%;
+        height: 1px;
+        border-top: solid #FFBB00 1px;
+        margin-left: 42%;
+        padding-top: 15px;
+        margin-top: -30px;
+
+    }
+
+    .c5 {
+
+        padding-top: -10px;
+        margin-left: -3%;
+    }
+
+    .d1 {
+        clear: both;
+    }
+
+    .d2 {
+        font-size: 14px;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .d2 h4 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .d3 {
+        width: 695px;
+        height: 430px;
+        background-color: #b5b5b5;
+        margin-left: -5%;
+        margin-top: 50px;
+    }
+
+    .d4 {
+        width: 200px;
+        color: white;
+        font-weight: 800;
+        border-bottom: 1px solid #f1c232;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+
+    .d5 {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .d6 {
+        width: 65px;
+        height: 65px;
+        background-color: white;
+        text-align: center;
+        padding-top: 15px;
+        float: left;
+    }
+
+    .d7 {
+        color: white;
+        margin-left: 110px;
+    }
+
+    .d7 div {
+        font-size: 14px;
+    }
+
+    .d7:hover h6 {
+        color: rgb(213, 235, 18);
+        font-weight: bold;
+    }
+
+    .d6 div {
+        margin-top: -13%;
+    }
+
+    .e1 {
+        margin-top: 40px;
+        margin-left: -4%;
+        text-shadow: 1px 1px 1px yellow
+    }
+
+    .e2 {
+        width: 12%;
+        height: 1px;
+        border-top: solid #FFBB00 1px;
+        margin-left: 42%;
+        padding-top: 25px;
+        margin-top: -30px;
+
+    }
+
+
+    .f1 {
+        margin-left: 30px;
+
+        width: 1460px;
+        height: 460px;
+
+        -webkit-box-shadow: #666 0px 0px 10px;
+        -moz-box-shadow: #666 0px 0px 10px;
+        box-shadow: #666 0px 0px 10px;
+    }
+
+
+    .f2 thead {
+        background-color: rgba(128, 128, 128, 0.178);
+    }
+
+    .f2 {
+        border-color: hotpink;
+    }
+
+    .f3 {
+        color: rgba(14, 74, 240, 0.753);
+        font-weight: bold;
+
+    }
+
+    .f4 {
+        padding-top: 20px;
+        margin-left: -3%;
+    }
+    .f5:hover{
+        background-color: #edf10a;
+        color: white;
+    }
+
+    .down-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .down-arrow:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-right: 3px solid rgba(23, 70, 224, 0.856);
+        border-top: 3px solid rgb(23, 70, 224, 0.856);
+        -webkit-transform: rotate(135deg);
+        /*箭头方向可以自由切换角度*/
+        transform: rotate(135deg);
+    }
+
+    .g1 {
+        height: 550px;
+        background-image: url("img/liu/index-space.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto auto;
+        text-align: center;
+    }
+
+    .g2 {
+        margin-top: 3%;
+        padding-top: 80px;
+        height: 200px;
+        text-align: center;
+        color: white;
+    }
+
+    .g3 {
+        font-size: 45px;
+        font-weight: 800px;
+        margin-left: -5%;
+        margin-top: -2%;
+
+    }
+
+    .g4 {
+        font-size: 35px;
+        font-weight: 800px;
+        margin-left: -5%;
+    }
+
+    .g5 {
+        margin-left: -5%;
+        text-align: center;
+        color: white;
+        display: inline-block;
+    }
+
+    .g6 {
+        width: 220px;
+        height: 220px;
+        border: white 1px solid;
+        float: left;
+        margin-top: 70px;
+        margin-left: 25px;
+        margin-right: 25px;
+        border-radius: 10%;
+    }
+
+    .g6:hover {
+        background-color: #ebbe37c9;
+    }
+
+    .i1 {
+        text-align: center;
+        margin-left: -100px;
+    }
+
+    .i2 {
+
+        margin-top: 40px;
+        display: inline-block;
+
+    }
+
+    .i22 {
+        float: left;
+        padding-top: 40px;
+        margin-left: -3%;
+    }
+
+    .i3 {
+        margin-left: 30px;
+        width: 430px;
+        height: 130px;
+        background-color: #2c3c83;
+        float: left;
+        text-align: left;
+    }
+
+    .i4 {
+        margin-left: 40px;
+        width: 430px;
+        height: 130px;
+        background-color: #f3966bf5;
+        float: left;
+        text-align: left;
+    }
+
+    .i5 {
+        padding-top: 20px;
+        color: #ffffff;
+        margin-left: 30px;
+    }
+
+
+    .k1 {
+        height: 815px;
+        margin-top: 40px;
+        background-color: #022234;
+        text-align: center;
+    }
+
+    .k2 {
+        background-color: #4b5a6e;
+        height: 6px;
+    }
+
+    .k3 {
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+        margin-left: -2%;
+    }
+
+    .k4 {
+        width: 4%;
+        height: 1px;
+        border-top: solid #FFBB00 2px;
+        margin-left: 47%;
+        padding-top: 15px;
+        margin-top: 3px;
+
+    }
+
+    .hp {
+        font-size: 35px;
+        margin-left: -2%;
+        font-weight: 800px;
+        display: inline-block;
+
+    }
+
+    .k5 {
+        margin-left: 18%;
+        margin-top: -2%;
+    }
+
+
+    .k6 {
+        color: gold;
+
+    }
+
+    .k66 {
+        background-color: gold;
+        color: #ffffff;
+        margin-top: 5px;
+    }
+
+    .k7 {
+        font-size: 20px;
+        margin-left: -20px;
+    }
+
+    .k8 {
+        margin-left: -20px;
+        display: inline-block;
+    }
+
+    .k9 {
+        width: 30px;
+
+    }
+
+
+    .m1 {
+        width: 1000px;
+        margin-left: -2%;
+        margin-top: 5px;
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed white;
+        color: white;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .m2 {
+        display: inline-block;
+        color: white;
+        margin-top: 20px;
+
+    }
+
+    .m3 {
+        float: left;
+        border-right: 1px solid white;
+        line-height: 16px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .m4 {
+        float: left;
+        line-height: 16px;
+        padding-left: 10px;
+    }
+
+    .m5 {
+        color: white;
+        margin-top: 15px;
+    }
+
+    .ndd button:hover {
+        background-color: orange;
+    }
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl  navbar-dark ddd">
+        <img src="img/liu/logo.jpg">
+        <div class="navbar-brand"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#xiala">
+            <span class="navbar-toggler-icon d"></span>
+        </button>
+        <div class="navbar-collapse col-sm-5"></div>
+        <div class="navbar-collapse aaaa" id="xiala">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">产品系列</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">品牌魅力</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">新闻中心</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">品质服务</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">联系我们</a>
+                </li>
+                <div class="ml-auto">
+                    <form class="navbar-form form-inline">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary"><span class="fa fa-crop">注册</span></button>
+                            <button type="button" class="btn btn-success"><span class="fa fa-gopuram">登录</span></button>
+                    </form>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel slide" id="car" data-ride="carousel" data-interval="2000">
+        <ul class="carousel-indicators">
+            <li data-target="#car" data-slidee-to="0" class="active"></li>
+            <li data-target="#car" data-slidee-to="1"></li>
+            <li data-target="#car" data-slidee-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <figure class="fig1">
+                    <a href="#"><img src="img/liu/index_banner_01.jpg"></a>
+                    <figcaption>
+                        <p>设计师免费上门测量</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="carousel-item">
+                <figure class="fig1">
+                    <a href="#"><img src="img/liu/index_banner_02.jpg"></a>
+                    <figcaption>
+                        <p>一站式服务，省心 省时 省力</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="carousel-item">
+                <figure class="fig1">
+                    <a href="#"><img src="img/liu/index_banner_03.jpg"></a>
+                    <figcaption>
+                        <p>五年质保，终身免费维护保养</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <a class="left carousel-control-prev" href="#car" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="right carousel-control-next" href="#car" data-slide="prev">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 bg-primary">
+                <b class="text-white">
+                    <p class="text-center bg-white-active">尊享VIP尊贵服务项目</p>
+                </b>
+                <span class="text-white">您只需要一个电话，我们专业的设计师顾问便不辞距离，提供上门家访服务，
+                    视乎您的具体要求，协助您更便捷、方便、称心地选购到最合适的产品。
+                </span>
+            </div>
+            <div class="col"></div>
+            <div class="col-sm-5 bg-primary">
+                <b class="text-white">
+                    <p class="text-center">五星级配送安装</p>
+                </b>
+                <span class="text-white">每一件产品售出时都经过质量检测人员的严格检验，务求把产品完好无损地送到您的手中；
+                    我们聘请最专业的物流配送公司，高效、守时地为您提供全球性运输服务。
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row qf">
+        <div class="col-sm-6 cc">
+            <img src="img/liu/chanpin.jpg">
+            <h4>产品系列</h4>
+            <div>
+                在家居设计中有些突破常规的往往能让人过目不忘，如果是运用到家里那么最终效果也是令人称赞的。如果你喜欢新奇的事物
+                喜欢新奇的设计，完全可以尝试将自己的家引入不同的设计。
+            </div>
+            <br>
+            <div class="dropright">
+                <a href="#" class="btn btn-light dropdown-toggle" style="border: 1px solid;">了解更多</a>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <figure1 class="fig2 text-center">
+                <img src="img/liu/index_a1.jpg" width="370px" height="230px">
+                <figcaption>
+                    <div>
+                        <h4>原橡木系列</h4>
+                        <span>橡木材质，自然之家，让你的家具更加清新脱俗</span>
+                        <br><br>
+                        <a href="#" class="btn btn-btn btn-outline-light vvv">查看详情</a>
+                    </div>
+                </figcaption>
+                </figure>
+        </div>
+        <div class="col-sm-3">
+            <figure1 class="fig2 text-center">
+                <img src="img/liu/index_a2.jpg" width="370px" height="230">
+                <figcaption>
+                    <div>
+                        <h4>浅胡桃系列</h4>
+                        <span>胡桃木材质，光滑如玉，简约不失温馨</span>
+                        <br><br>
+                        <a href="#" class="btn btn-btn btn-outline-light vvv">查看详情</a>
+                    </div>
+                </figcaption>
+                </figure>
+        </div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-3 hh">
+            <figure1 class="fig2 text-center">
+                <img src="img/liu/index_a3.jpg" width="370px" height="230px">
+                <figcaption>
+                    <div>
+                        <h4>日式和风系列</h4>
+                        <span>日式文化与欧美风格的激情碰撞</span>
+                        <br><br>
+                        <a href="#" class="btn btn-btn btn-outline-light vvv">查看详情</a>
+                    </div>
+                </figcaption>
+                </figure>
+        </div>
+        <div class="col-sm-3 hh">
+            <figure1 class="fig2 text-center">
+                <img src="img/liu/index_a4.jpg" width="370px" height="230px">
+                <figcaption>
+                    <div>
+                        <h4>豪情别墅系列</h4>
+                        <span>有钱人的家居就是这么朴实无华且枯燥</span>
+                        <br><br>
+                        <a href="#" class="btn btn-btn btn-outline-light vvv">查看详情</a>
+                    </div>
+                </figcaption>
+                </figure>
+        </div>
+    </div>
+    <p class="text-center e"><b>产品案例</b></p>  
+        <div class="link-top"></div>
+    </div>
+    <div class="jumbotron page-header">
+        <div class="row g">
+            <div class="img-thumbnail float-left col-sm-4">
+                <img src="img/liu/services_d01.jpg" style="width: 470px; height: 260px;">
+                <h5>美的明湖花园</h5>
+                <p>美的明湖花园位于佛山市高明区西江街新城中轴线，为高明首个智慧社区。地处有最美艺术公园之称的明湖公园旁...</p>
+            </div>
+            <div class="img-thumbnail float-left col-sm-4">
+                <img src="img/liu/services_d02.jpg" style="width: 470px; height: 260px;">
+                <h5>大未来样板房-新东方之风</h5>
+                <p>上海的历史背景成就独特的租界风格，中西并融于一地景色，东西方文化激温为殊异的人文景观。现金兴起的「新上海风」，强调不带夸饰的低调奢华，不以传统的金</p>
+            </div>
+            <div class="img-thumbnail float-left col-sm-4">
+                <img src="img/liu/services_d03.jpg" style="width: 460px; height: 260px;">
+                <h5>北浅山别墅-温馨雅致的品位空间</h5>
+                <p>整个E户型以素净高雅的米色为主调，加上银灰洞石进口枫木等高档建材，为现代的设计手法下，通过优雅细腻的布局，融合秀丽怡人的天然湖景为主打造高级</p>
+            </div>
+        </div>
+        <div class="dropright bbb">
+            <center><a href="#" class="btn btn-btn  dropdown-toggle"
+                    style="border:1px solid; text-align:center;">了解更多</a></center>
+        </div>
+    </div>
+    <div class="try">
+        <div class="container">
+            <div class=" float-left col-sm-4 a2">
+                <img src="img/liu/index_b2.png" style="width: 120px; height: 130px;">
+                <div class="a1">
+                    <h5>先行赔付</h5>
+                    <p>先行赔付指耐特利尔受消费者投诉后对符合条件消费者代理商先行垫付赔偿金。
+                        当商户的商品出现质量问题或者服务上的问题时，您可带合同到企业投诉并要求先行向您赔付</p>
+                </div>
+            </div>
+            <div class="float-left col-sm-4 a3">
+                <img src="img/liu/index_b3.png" style="width: 120px; height: 130px;">
+                <div class="a1">
+                    <h5>非质量问题退货换货</h5>
+                    <p>自签订耐特利尔家具销售合同之日起20天内，甲方由于喜好等原因变化，
+                        可以要求退换（特别定制商品，专门为顾客进口商品，注明为特价，提供商品除外）</p>
+                </div>
+            </div>
+            <div class=" float-left col-sm-4 a3">
+                <img src="img/liu/index_b4.png" style="width: 120px; height: 130px;">
+                <div class="a1">
+                    <h5>比价10倍退差价</h5>
+                    <p>在签订合同一周内，甲方发现所购商品（必须是同品牌、同规格、非特价品、废处理品的价格高于郑州市场），
+                        并能提供确凿证据的，乙方将高处部分十倍返还给甲方。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row qf1">
+            <div class="col-sm-6 cc">
+                <img src="img/liu/index_c1.jpg" width="380px" height="210px">
+
+                <div class="b1">
+                    北京耐特利尔家具有限公司1988年创办，是一家大型集设计、生产、销售于一体的家具企业，
+                    坐落于北京市昌平区回龙观，自建城占地面积三万八千余平方米的标准厂房，
+                    公司有雄厚的技术实力及先进设备，拥有一大批专业技术人才，崇尚人性化设计。
+                    产品力求简洁，流畅贴近现代人的生活。产品有原橡木系列、柚木系列、胡桃木系列麦白系列、
+                    布艺沙发等，为保证产品质量，公司从德国引进了版样生产线，采用进口优质五金配件，
+                    实行高标准生产管理，确保出库合格率98%以上。”优质高效“是我们的服务承诺，
+                    训练有素的安装团队及售后服务队伍为您排除一切后顾之忧。
+                </div>
+            </div>
+            <div class="col-sm-5 cc">
+                <img src="img/liu/pinpai.jpg">
+                <h4>品牌魅力</h4>
+                <div class="b2">
+                    一流的员工、一流的设备、一流的材料铸就一流的耐特利尔家具。
+                    顾客优先，我们有专业的团队，能为您提供高品质的服务。
+                </div>
+                <div class="dropright b1">
+                    <a href="#" class="btn btn-light dropdown-toggle" style="border: 1px solid;">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center c3 "><b>企业荣誉</b></p>  
+            <div class="link-top c4"></div>
+
+        <div class="jumbotron page-header c1">
+            <div class="row c2">
+                <div class="col-sm-3"><img src="img/liu/brand_c01.jpg" class="img-thumbnail"></div>
+                <div class="col-sm-3"><img src="img/liu/brand_c02.jpg" class="img-thumbnail"></div>
+                <div class="col-sm-3"><img src="img/liu/brand_c03.jpg" class="img-thumbnail"></div>
+                <div class="col-sm-3"><img src="img/liu/brand_c04.jpg" class="img-thumbnail"></div>
+            </div>
+        </div>
+        <div class="dropright c5">
+            <center><a href="#" class="btn btn-btn  dropdown-toggle"
+                    style="border:1px solid; text-align:center;">了解更多</a></center>
+        </div>
+        <div class="row d1">
+            <div class="col-sm-6 d2">
+                <img src="img/liu/xinwen.jpg">
+                <h4>新闻中心</h4>
+                <div>
+                    了解耐特利尔家具新闻动态。
+                    了解耐特利尔家具别样的精彩。把握命脉，把握方向。把握真实，传递热点。
+                </div>
+                <br>
+                <div class="dropright">
+                    <a href="#" class="btn btn-light dropdown-toggle" style="border: 1px solid;">了解更多</a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="d3">
+                    <div class="d4">
+                        <h3>最新资讯</h3>
+                    </div>
+                    <div class="d5">
+                        <div class="d6">
+                            <div>APR</div>
+                            <h4>05</h4>
+                        </div>
+                        <div class="d7">
+                            <h6>匠心所致 耐特利尔家具喜获高新技术企业认定</h6>
+                            <div>创新改变生活方式，技术改变未来生活，二十多年来，内特里尔
+                                家具在创新探索的路上坚持....
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d5">
+                        <div class="d6">
+                            <div>FEB</div>
+                            <h4>27</h4>
+                        </div>
+                        <div class="d7">
+                            <h6>耐特利尔家具喜获国家工商总局“守合同重信用”企业公示资格</h6>
+                            <div>
+                                近日，国家工商行政管理总局网发布了工商总局2016-2017
+                                年度守合同重信用企业公示名单...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d5">
+                        <div class="d6">
+                            <div>DEC</div>
+                            <h4>19</h4>
+                        </div>
+                        <div class="d7">
+                            <h6>耐特利尔家具荣获上市公司竞争力工信力调查评选“最佳社会</h6>
+                            <div>
+                                12月19日，由大众证券报，东台市人民政府联合主办，新浪财经，
+                                享通伟业协办的第十一届...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d5">
+                        <div class="d6">
+                            <div>DEC</div>
+                            <h4>12</h4>
+                        </div>
+                        <div class="d7">
+                            <h6>耐特利尔家具荣获2016中国企业社会责任优秀奖</h6>
+                            <div>
+                                12月12日，由《公益时报》社主办的2016第六届中国企业社会责任卓越奖
+                                颁奖典礼在京举行...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center e1 "><b>常见问题</b></p>  
+            <div class="link-top e2"></div>
+        <div class="table-responsive f1">
+            <table class="table f2">
+                <thead>
+                    <tr>
+                        <th>
+                            <h4>常见问题解答</h4>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h5>问题</h5>
+                        </td>
+                        <td>
+                            <h5>答案</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f3">你们是什么品牌？</td>
+                        <td class="f3">
+                            <div><a href="javascript:void(0)" class="down-arrow"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f3">你们的家具是在哪里生产的？</td>
+                        <td class="f3">
+                            <div><a href="javascript:void(0)" class="down-arrow"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f3">如何联系你们？</td>
+                        <td class="f3">
+                            <div><a href="javascript:void(0)" class="down-arrow"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f3">你们的家具环保吗？</td>
+                        <td class="f3">
+                            <div><a href="javascript:void(0)" class="down-arrow"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f3">你们的家具用的什么板材？</td>
+                        <td class="f3">
+                            <div><a href="javascript:void(0)" class="down-arrow"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f3">你们通常什么时间上门量尺？</td>
+                        <td class="f3">
+                            <div><a href="javascript:void(0)" class="down-arrow"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f3">有我家楼盘户型案例吗？</td>
+                        <td class="f3">
+                            <div><a href="javascript:void(0)" class="down-arrow"></a></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="dropright f4">
+            <center><a href="#" class="btn btn-btn f5  dropdown-toggle"
+                    style="border:1px solid; text-align:center;">了解更多</a></center>
+        </div>
+        <div class="g1">
+            <div class="g2">
+                <div class="g3"> Creative Space</div>
+                <div class="g4">创意空间订制</div>
+            </div>
+            <div class="g5">
+                <div class="g6">
+                    <br>
+                    <h3>预约量房设计</h3>
+                    <br>
+                    <div>Design room</div>
+                    <div>reservation amout</div>
+                    <br>
+                    <img src="img/liu/index-space1.png">
+                </div>
+                <div class="g6">
+                    <br>
+                    <h3>定制体验店</h3>
+                    <br>
+                    <div>Custom Shop</div>
+                    <div>Experience</div>
+                    <br>
+                    <img src="img/liu/index-space2.png">
+                </div>
+                <div class="g6">
+                    <br>
+                    <h3>业务咨询</h3>
+                    <br>
+                    <div>Business</div>
+                    <div>Consulting</div>
+                    <br>
+                    <img src="img/liu/index-space3.png">
+                </div>
+                <div class="g6">
+                    <br>
+                    <h3>更多案例</h3>
+                    <br>
+                    <div>More Classic</div>
+                    <div>Case</div>
+                    <br>
+                    <img src="img/liu/index-space4.png">
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="i1">
+            <div class="i2">
+                <div class="i3">
+                    <div class="i22 col-sm-3"> <img src="img/liu/index_e1.png"></div>
+                    <div class="i5">
+                        <h5>绿色环保材料</h5>
+                        <p>确保所售家具100%环保，无污染，不含任何有害物质。</p>
+                    </div>
+                </div>
+                <div class="i4">
+                    <div class="i22 col-sm-3"><img src="img/liu/index_e2.jpg"></div>
+                    <div class="i5">
+                        <h5>100%品质保障</h5>
+                        <p>耐特利尔家具所售的商品出厂前均经过严格质检，发货前会有配送人员
+                            进行二次检验。
+                        </p>
+                    </div>
+                </div>
+                <div class="i3">
+                    <div class="i22 col-sm-3"><img src="img/liu/index_e3.png"></div>
+                    <div class="i5">
+                        <h5>30日内无理由退/换货</h5>
+                        <p>承诺对于存在质量问题的商品提供无条件退换货，运费由我公司承担。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="k1">
+            <div class="k2"></div>
+            <div class="k3">
+                <div class="hp">联系我们</div>
+                <div class="link-top k4"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row k5">
+                    <div class="col-sm-3">
+                        <div class="k6">地址</div>
+                        <br>
+                        <div>北京市昌平区东小口镇辛庄工业区</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="k6">电话</div>
+                        <br>
+                        <div>
+                            400-8881916
+                        </div>
+                        <div>
+                            010-81703311/222/77
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="k6">邮箱</div>
+                        <br>
+                        <div>
+                            3127736010@qq.com
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="k7">留言给我们</div>
+                <br>
+                <div class="k8">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" placeholder="姓名：" class="form-control" style="width: 350px;">
+                            <div class="k9"></div>
+                            <input type="text" placeholder="邮箱：" class="form-control" style="width: 350px;">
+                        </div>
+                    </form>
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <textarea style="width: 730px; height: 140px;" placeholder="留言："></textarea>
+                        </div>
+                        <button class="btn k66">发送留言</button>
+                    </form>
+                </div>
+
+            </div>
+            <br>
+            <div class="m1">
+                友情链接：
+                <span><a>集美家具</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a>居然之家</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a>红星美凯龙</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a>欧凯龙</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a>爱家家居</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a>银座家居</a></span>&nbsp;&nbsp;&nbsp;
+                <span><a>月星家居</a></span>&nbsp;&nbsp;&nbsp;
+            </div>
+            <br>
+            <div class="m2">
+                <div class="gold m3">首页</div>
+                <div class="m3">产品系列</div>
+                <div class="m3">品牌魅力</div>
+                <div class="m3">新闻中心</div>
+                <div class="m3">品牌服务</div>
+                <div class="m4">联系我们</div>
+            </div>
+            <br>
+            <div class="m5">
+                CopyRight 2003-2009 北京耐特利尔家具有限公司 版权所有 京ICP备12012006 中企动力提供技术支持
+            </div>
+        </div>
+    </div>

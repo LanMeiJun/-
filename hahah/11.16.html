@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="name">
+        <input type="date" name="thday">
+        <input type="submit">
+    </form>
+    <table>
+        <tr>
+            <th>用户名</th>
+            <th>生日</th>
+        </tr>
+    </table>
+    <script>      
+function appendUser(user){
+    let table=document.querySelector('table')
+    let tr=document.createElement("tr")
+    let td1=document.createElement("td")
+    let td2=document.createElement("td")
+    td1.innerHTML=user.name
+    td2.innerHTML=user.thday
+    tr.appendChild(td1)
+    tr.appendChild(td2)
+    table.appendChild(tr)
+    }
+    let form=document.querySelector('form')
+    form.addEventListener('submit',function(event){
+        let name=document.querySelector("input[name='name']").value
+        let thday=document.querySelector("input[name='thday']").value
+    appendUser({name,thday})
+    event.preventDefault()
+    
+    })
+
+    </script>
+</body>
+</html>

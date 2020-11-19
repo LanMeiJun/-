@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>标签栏切换效果</title>
+    <style>
+      body,ul{margin:0;padding:0;}
+      ul{list-style:none;}
+      .tab-box{width:475px;margin:10px;margin:0 auto;} /*border:1px solid rgb(242, 133, 252);border-top:1px solid #206F96; */
+      .tab-head{height:35px;}
+      .tab-head-div{width:118px;height:35px;float:left;border-bottom:1px solid rgb(242, 133, 252);border-right:1px solid rgb(242, 133, 252);
+      border-top:1px solid rgb(242, 133, 252);background:#206F96;line-height:35px;text-align:center;
+      cursor:pointer;color:rgb(255, 255, 255);border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
+      .tab-head .current{background:rgb(222, 255, 76);border-bottom:1px solid rgb(242, 133, 252);color:#000;}
+      .tab-head-r{border-right:0;}
+      .tab-body-div{display:none;margin:20px 10px;}
+      .tab-body .current{display:block;}
+      .tab-body img{width: 450px; height:420px;text-align:center; ;border: 1px solid #CCCCCC;box-shadow: 1px 1px 5px red;}
+    </style>
+  </head>
+  <body>
+    <div class="tab-box">
+      <div class="tab-head">
+        <div class="tab-head-div current">照片一</div>
+        <div class="tab-head-div">照片二</div>
+        <div class="tab-head-div">照片三</div>
+        <div class="tab-head-div tab-head-r">照片四</div>
+      </div>
+      <!--jkdjfk?-->
+      <div class="tab-body">
+        <div class="tab-body-div current"><img src="1.jpg"></div>
+        <div class="tab-body-div" ><img src="2.jpg"></div>
+        <div class="tab-body-div"><img src="3.jpg"></div>
+        <div class="tab-body-div"><img src="4.jpg"></div>
+      </div>
+    </div>
+    <script>
+      // 获取标签栏的所有标签元素对象
+      var tabs = document.getElementsByClassName('tab-head-div');
+      // 获取标签栏的所有内容对象
+      var divs = document.getElementsByClassName('tab-body-div');
+      for (var i = 0; i < tabs.length; ++i) {        // 遍历标签部分的元素对象
+        tabs[i].onmouseover = function() {           // 为标签元素对象添加鼠标滑过事件
+          for (var i = 0; i < divs.length; ++i) {    // 遍历标签栏的内容元素对象
+            if (tabs[i] == this) {    // 显示当前鼠标滑过的li元素
+              divs[i].classList.add('current');
+              tabs[i].classList.add('current');
+            } else {                  // 隐藏其他li元素
+              divs[i].classList.remove('current');
+              tabs[i].classList.remove('current');
+            }
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

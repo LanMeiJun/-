@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .box{width:50px;height:50px;background:red;margin:0 0 0 100px;}
+      .box1{width:50px;height:50px;background:blueviolet;margin:0 0 0 0;}
+    </style>
+  </head>
+  <body>
+    <div id="box" class="box"></div>
+    <div id="box1" class="box1"></div>
+    <script>
+      var box = document.getElementById('box');
+      var i = 0;                     // 保存用户单击盒子的次数
+      box.onclick = function() {     // 处理盒子的单击事件
+        ++i;
+        if (i % 2) {                 // 单击次数为奇数，变大
+          this.style.width = '200px';
+          this.style.height = '200px';
+          this.innerHTML = '大';
+          this.style.backgroundColor = "green"
+          this.style.textAlign='center'
+        } 
+        else {                     // 单击次数为偶数，变小
+          this.style.width = '100px';
+          this.style.height = '100px';
+          this.innerHTML = '小';
+          this.style.backgroundColor = "yellow"
+         
+        }
+        tr
+      };
+      var box1 =document.getElementById("box1");
+      var j=1;
+      box1.onclick =function(){
+        ++j;
+        if (j % 2) {                 // 单击次数为奇数，变大
+          this.style.width = '400px';
+          this.style.height = '400px';
+          this.innerHTML = '大';
+          this.style.backgroundColor = "green"
+          this.style.textAlign='center'
+          this.style.borderRadius="50%"
+        } 
+        else {                     // 单击次数为偶数，变小
+          this.style.width = '200px';
+          this.style.height = '200px';
+          this.innerHTML = '小';
+          this.style.backgroundColor = "yellow"
+          this.style.textAlign='center'
+          this.style.borderRadius="50%"
+         
+        }
+        tr
+      };
+     
+    </script>
+  </body>
+</html>
